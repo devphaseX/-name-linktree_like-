@@ -1,0 +1,36 @@
+.externalRefInfo {
+  margin-top: 56px;
+}
+
+.externalRefInfo_list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.externalRefInfo_item {
+  background-color: #eaecf0;
+  height: 76px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #eaecf0;
+  border-radius: 8px;
+}
+
+.externalRefInfo_item:not(:last-of-type) {
+  margin-bottom: 24px;
+}
+
+.externalRefInfo_item > a {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #101828;
+}
+
+/* @media (max-width: 77em) {
+  .externalRefInfo_item > a {
+    font-size: 14px;
+  }
+} */

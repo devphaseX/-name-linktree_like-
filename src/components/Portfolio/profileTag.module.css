@@ -1,0 +1,31 @@
+.profileTag {
+  display: flex;
+  justify-content: center;
+}
+
+.profileTag_image {
+  width: 88px;
+  height: 88px;
+  border-radius: 275px;
+  overflow: hidden;
+}
+
+.profileTag_image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.profileDetail {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profileUsername {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: black;
+  margin-top: 24px;
+}

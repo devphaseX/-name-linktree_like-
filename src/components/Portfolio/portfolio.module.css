@@ -1,0 +1,13 @@
+.portfolio {
+  position: relative;
+}
+
+.buttonRef {
+  position: absolute;
+  right: 208px;
+  top: -20px;
+}
+
+.fix-button {
+  right: 0;
+}

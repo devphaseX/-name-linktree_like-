@@ -1,0 +1,16 @@
+.externalPlatform {
+  display: inline-flex;
+  margin-inline: auto;
+  column-gap: 24px;
+}
+
+.externalPlatformIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.externalPlatformIcon img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
