@@ -4,7 +4,6 @@ import externalRefInfoStyle from './externalRefInfo.module.css';
 import { randomNaiveId } from '../util/index';
 
 const externalRefs = getExternalRef().map((ref) => mapObjectToId(ref), true);
-
 const slackAsset: ExternalRef & {
   id: string;
 } = {
@@ -18,10 +17,10 @@ const ExternalRefInfo = () => (
   <div className={externalRefInfoStyle.externalRefInfo}>
     <ul className={externalRefInfoStyle.externalRefInfo_list}>
       {externalRefs.map((ref) => (
-        <RefInfo asset={ref} />
+        <RefInfo asset={ref} key={ref._id_str} />
       ))}
 
-      <RefInfo asset={slackAsset} disable />
+      <RefInfo key={slackAsset._id_str} asset={slackAsset} disable />
     </ul>
   </div>
 );
