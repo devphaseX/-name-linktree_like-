@@ -5,12 +5,15 @@ const { Github, Slack } = getImageAssets();
 
 const ExternalPlatform = () => (
   <div className={externalPlatformStyle.externalPlatform}>
-    <div className={externalPlatformStyle.externalPlatformIcon}>
+    <a href="" className={externalPlatformStyle.externalPlatformIcon}>
       <img src={Slack.url} alt={Slack.title} />
-    </div>
-    <div className={externalPlatformStyle.externalPlatformIcon}>
+    </a>
+    <a
+      href="https://github.com/devphaseX"
+      className={externalPlatformStyle.externalPlatformIcon}
+    >
       <img src={Github.url} alt={Github.title} />
-    </div>
+    </a>
   </div>
 );
 

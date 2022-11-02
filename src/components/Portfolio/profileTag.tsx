@@ -7,7 +7,7 @@ interface ProfileTagProps {
 }
 
 const ProfileTag: React.FC<ProfileTagProps> = ({ imageAssest, userName }) => (
-  <div className={profileTagStyle.profileTag}>
+  <div id="profile__img" className={profileTagStyle.profileTag}>
     <figure className={profileTagStyle.profileDetail}>
       <div className={profileTagStyle.profileTag_image}>
         <img src={imageAssest.url} alt={imageAssest.title} />

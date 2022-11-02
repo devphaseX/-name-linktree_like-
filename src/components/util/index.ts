@@ -14,7 +14,7 @@ function sortBy<Item>(
 }
 
 function randomNaiveId() {
-  return Math.random().toString(32).slice(2);
+  return (Math.random() * 2).toString(32).slice(2);
 }
 
 function mapObjectToId<T extends Record<PropertyKey, any>>(

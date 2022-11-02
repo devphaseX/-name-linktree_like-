@@ -40,7 +40,6 @@ const useMediaQuery = (option: useMediaQueryOption) => {
     );
 
     queryHandler();
-    console.log(queryMedia);
     return () => {
       queryMedia.removeEventListener('change', queryHandler);
     };
